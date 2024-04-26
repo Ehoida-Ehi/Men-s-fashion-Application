@@ -183,3 +183,127 @@ margin-bottom: 10px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  cursor: pointer;
+}
+nav li {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.logo {
+  color: #000;
+  text-decoration: none;
+}
+.logo,
+.nav_right {
+  flex-grow: 1;
+}
+.nav_center {
+  flex-grow: 2;
+}
+.nav_center,
+.nav_right {
+  display: flex;
+  justify-content: end;
+}
+.nav_center li {
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  padding: 20px 30px;
+  transition: all 1s;
+}
+.nav_center li:hover,
+.nav_right li:hover {
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+.nav_right li {
+  border-right: 1px solid #e7e7e7;
+  padding: 20px 30px;
+}
+.nav_right span {
+  display: inline-block;
+  margin-left: 10px;
+}
+.nav_right li:last-child {
+  border: none;
+}
+.footer1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px;
+}
+.footer1 h3,
+.footer1 li:nth-of-type(1) {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer1 li {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.newsletter {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.newsletter input {
+  width: 60%;
+  padding-left: 10px;
+}
+.newsletter button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.footer1 .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e7e7e7;
+  padding: 20px 40px;
+}
+.footer2 p {
+  font-style: italic;
+  font-size: 12px;
+}
+.footer2 .box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.credit_cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.credit_cards img {
+  width: 20px;
+}
